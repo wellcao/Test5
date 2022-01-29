@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2022-01-29T02:42:38.593Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="5os2MWKp0RnF_x8Zf4Rg" version="16.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-29T07:10:15.184Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="zeyfrBhMNZ7dO15zjP5N" version="16.5.0" type="github">
   <diagram id="l4tcxmfZncSMQ29FKpY7" name="Page-1">
-    <mxGraphModel dx="3846" dy="2397" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2837" dy="1891" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Hv99QJB7RZ9gsGbvz8aW-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1560" y="-970" width="4400" height="2380" as="geometry" />
+        </mxCell>
         <mxCell id="yh1fPblWoHR3ejIN9CGP-2" value="&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #00627a&quot;&gt;PendingUpdateNotification # &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #00627a&quot;&gt;updateExistingNotification&lt;/span&gt;(&lt;span style=&quot;color: #9e880d&quot;&gt;@Nullable &lt;/span&gt;&lt;span style=&quot;color: #000000&quot;&gt;String &lt;/span&gt;newInstalledPackageName)&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;条件拦截：&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;1. 存在更新通知，不限制&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;2. 不存在更新通知&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;①. 外部安装应用，有更新.&amp;amp; 满足检查更新间隔条件&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;②.内部安装应用，满足更新间隔时间&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="190" y="280" width="486" height="190" as="geometry" />
         </mxCell>
@@ -34,20 +37,6 @@
         <mxCell id="yh1fPblWoHR3ejIN9CGP-9" value="&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;pre style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #000000&quot;&gt;LocalAppManager #&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #00627a&quot;&gt;checkUpdateBackground&lt;/span&gt;(&lt;span style=&quot;color: #0033b3&quot;&gt;boolean &lt;/span&gt;forceRecheck)&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;前台或后台检查更新&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="300" y="-220" width="340" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="yh1fPblWoHR3ejIN9CGP-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.065;exitY=0.989;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.421;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="yh1fPblWoHR3ejIN9CGP-3" target="yh1fPblWoHR3ejIN9CGP-9" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="700" y="-220" as="sourcePoint" />
-            <mxPoint x="750" y="-270" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="330" y="-420" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="yh1fPblWoHR3ejIN9CGP-11" value="限制条件&lt;br&gt;&lt;pre style=&quot;color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #871094 ; font-style: italic&quot;&gt;1.DEBUG_SILENCE_SCENE_ENABLE = false&lt;/span&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="yh1fPblWoHR3ejIN9CGP-10" vertex="1" connectable="0">
-          <mxGeometry x="0.1699" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="yh1fPblWoHR3ejIN9CGP-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.398;exitY=1.021;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="yh1fPblWoHR3ejIN9CGP-3" target="yh1fPblWoHR3ejIN9CGP-9" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="700" y="-220" as="sourcePoint" />
@@ -57,7 +46,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="yh1fPblWoHR3ejIN9CGP-14" value="限制条件&lt;br&gt;&lt;pre style=&quot;color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: rgb(135 , 16 , 148) ; font-style: italic&quot;&gt;1.DEBUG_SILENCE_SCENE_ENABLE = false&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: rgb(135 , 16 , 148) ; font-style: italic&quot;&gt;2. 非省电模式&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: rgb(135 , 16 , 148) ; font-style: italic&quot;&gt;3. 强制检查更新或距离上次检查更&amp;gt;检查更新间隔时间&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: rgb(135 , 16 , 148) ; font-style: italic&quot;&gt;4. 有网&lt;/span&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="yh1fPblWoHR3ejIN9CGP-12" vertex="1" connectable="0">
+        <mxCell id="yh1fPblWoHR3ejIN9CGP-14" value="限制条件&lt;br&gt;&lt;pre style=&quot;color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: rgb(135 , 16 , 148) ; font-style: italic&quot;&gt;1.DEBUG_SILENCE_SCENE_ENABLE = false&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: rgb(135 , 16 , 148) ; font-style: italic&quot;&gt;2. 非省电模式&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: rgb(135 , 16 , 148) ; font-style: italic&quot;&gt;3. 强制检查更新 或 距离上次检查更&amp;gt;检查更新间隔时间&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: rgb(135 , 16 , 148) ; font-style: italic&quot;&gt;或（source = manualUpdaterTimer/packagerAddedOutsider/testcheckupdater 并且 满足存在已经通知或间隔时间）&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;color: rgb(8 , 8 , 8) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: rgb(135 , 16 , 148) ; font-style: italic&quot;&gt;4. 有网&lt;/span&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="yh1fPblWoHR3ejIN9CGP-12" vertex="1" connectable="0">
           <mxGeometry x="-0.1755" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -174,7 +163,12 @@
             <mxPoint x="2030" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="yh1fPblWoHR3ejIN9CGP-38" value="&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #00627a&quot;&gt;PendingUpdateNotification # &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #00627a&quot;&gt;showOrCancel&lt;/span&gt;(&lt;span style=&quot;color: #000000&quot;&gt;String &lt;/span&gt;updateSource,&lt;span style=&quot;color: #000000&quot;&gt;String &lt;/span&gt;newInstalledPackageName, &lt;span style=&quot;font-size: 9.8pt ; white-space: normal ; color: rgb(0 , 51 , 179)&quot;&gt;boolean &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt ; white-space: normal&quot;&gt;isUpdateExistNotification)&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt ; white-space: normal&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;对通知进行条件拦截&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;1. app里是否设置了关闭通知&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;2.待更新应用是否&amp;gt;0&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;3.！（和上次更新内容一样&amp;amp;更新通知不存在&amp;amp;当前时间距离上次展示小于更新忽略间隔）&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="Hv99QJB7RZ9gsGbvz8aW-1" value="不存在更新通知" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yh1fPblWoHR3ejIN9CGP-37">
+          <mxGeometry x="-0.0576" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yh1fPblWoHR3ejIN9CGP-38" value="&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #00627a&quot;&gt;PendingUpdateNotification # &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #00627a&quot;&gt;showOrCancel&lt;/span&gt;(&lt;span style=&quot;color: #000000&quot;&gt;String &lt;/span&gt;updateSource,&lt;span style=&quot;color: #000000&quot;&gt;String &lt;/span&gt;newInstalledPackageName, &lt;span style=&quot;font-size: 9.8pt ; white-space: normal ; color: rgb(0 , 51 , 179)&quot;&gt;boolean &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt ; white-space: normal&quot;&gt;isUpdateExistNotification)&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt ; white-space: normal&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;对通知进行条件拦截&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;1. app里是否设置了关闭通知，关闭了则不展示，并取消已存在通知&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;2.待更新应用是否&amp;gt;0&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;3.！（和上次更新内容一样&amp;amp;更新通知不存在&amp;amp;当前时间距离上次展示小于更新忽略间隔）&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="100" y="540" width="680" height="220" as="geometry" />
         </mxCell>
         <mxCell id="yh1fPblWoHR3ejIN9CGP-39" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.466;exitY=1.006;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.411;entryY=0.007;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="yh1fPblWoHR3ejIN9CGP-2" target="yh1fPblWoHR3ejIN9CGP-38" edge="1">
@@ -189,7 +183,7 @@
             <mxPoint x="1870" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="yh1fPblWoHR3ejIN9CGP-50" value="对于已经存在更新通知的情况，不验证时间间隔等限制条件" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="yh1fPblWoHR3ejIN9CGP-40" vertex="1" connectable="0">
+        <mxCell id="yh1fPblWoHR3ejIN9CGP-50" value="已经存在更新通知，不验证时间间隔等限制条件" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="yh1fPblWoHR3ejIN9CGP-40" vertex="1" connectable="0">
           <mxGeometry x="-0.1275" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -212,10 +206,10 @@
             <mxPoint x="-250" y="850" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="yh1fPblWoHR3ejIN9CGP-45" value="&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #00627a&quot;&gt;PendingUpdateNotification #  最终展示，一定会展示&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;pre style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;pre style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #00627a&quot;&gt;show&lt;/span&gt;(updateSource, visibleUpdates,newInstalledPackageName,isExisting,isOutstanding, notificationTag,isImportantApp)&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;展示或更新通知&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="yh1fPblWoHR3ejIN9CGP-45" value="&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #00627a&quot;&gt;PendingUpdateNotification #  最终展示，一定会展示&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;pre style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;pre style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #00627a&quot;&gt;show&lt;/span&gt;(updateSource, visibleUpdates,newInstalledPackageName,isExisting,isOutstanding, notificationTag,isImportantApp)&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: #ffffff ; color: #080808 ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;展示或更新通知 ， 会在此时记录时间作为下次展示时间参照&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-10" y="1120" width="1027" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="yh1fPblWoHR3ejIN9CGP-46" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.23;entryY=0.015;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.219;exitY=0.996;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="yh1fPblWoHR3ejIN9CGP-41" target="yh1fPblWoHR3ejIN9CGP-45" edge="1">
+        <mxCell id="yh1fPblWoHR3ejIN9CGP-46" value="批量通知&lt;br&gt;①. 待更新数量&amp;gt;=1" style="endArrow=classic;html=1;rounded=0;entryX=0.23;entryY=0.015;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.219;exitY=0.996;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="yh1fPblWoHR3ejIN9CGP-41" target="yh1fPblWoHR3ejIN9CGP-45" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="226" y="980" as="sourcePoint" />
             <mxPoint x="540" y="990" as="targetPoint" />
@@ -224,23 +218,21 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="yh1fPblWoHR3ejIN9CGP-47" value="批量" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="yh1fPblWoHR3ejIN9CGP-46" vertex="1" connectable="0">
-          <mxGeometry x="0.053" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="yh1fPblWoHR3ejIN9CGP-48" value="重点" style="endArrow=classic;html=1;rounded=0;exitX=0.465;exitY=0.996;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.476;entryY=0.015;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="yh1fPblWoHR3ejIN9CGP-41" target="yh1fPblWoHR3ejIN9CGP-45" edge="1">
+        <mxCell id="yh1fPblWoHR3ejIN9CGP-48" value="重点通知&lt;br&gt;①. 待更新数量&amp;gt;1&lt;br&gt;②. 属于top n的应用（最近使用）&lt;br&gt;③. 展示条数受云控配置" style="endArrow=classic;html=1;rounded=0;exitX=0.465;exitY=0.996;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.476;entryY=0.015;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="yh1fPblWoHR3ejIN9CGP-41" target="yh1fPblWoHR3ejIN9CGP-45" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="450" y="1040" as="sourcePoint" />
             <mxPoint x="500" y="990" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="yh1fPblWoHR3ejIN9CGP-49" value="分类" style="endArrow=classic;html=1;rounded=0;exitX=0.725;exitY=0.996;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.735;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="yh1fPblWoHR3ejIN9CGP-41" target="yh1fPblWoHR3ejIN9CGP-45" edge="1">
+        <mxCell id="yh1fPblWoHR3ejIN9CGP-49" value="分类&lt;br&gt;①. 属于接口配置的分类类别&lt;br&gt;②. 该类别待更新数量&amp;gt;1" style="endArrow=classic;html=1;rounded=0;exitX=0.725;exitY=0.996;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.735;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="yh1fPblWoHR3ejIN9CGP-41" target="yh1fPblWoHR3ejIN9CGP-45" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="740" y="1060" as="sourcePoint" />
             <mxPoint x="790" y="1010" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Hv99QJB7RZ9gsGbvz8aW-4" value="&lt;h1&gt;补充&lt;/h1&gt;&lt;p&gt;1.&amp;nbsp;&lt;span style=&quot;background-color: rgb(245 , 245 , 245) ; color: rgb(51 , 51 , 51) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12.025px&quot;&gt;autoUpdateCheckInterval： 检查更新间隔&amp;nbsp; 5小时&lt;/span&gt;&lt;/p&gt;&lt;span style=&quot;color: rgb(135 , 16 , 148) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 13.0667px ; background-color: rgb(255 , 255 , 255)&quot;&gt;2.outsideInstallNotificationInterval：&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; color: rgb(135 , 16 , 148) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 9.8pt&quot;&gt;外部安装触发通知间隔时间&amp;nbsp; 6小时&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(135 , 16 , 148) ; font-family: &amp;#34;jetbrains mono&amp;#34; , monospace ; font-size: 13.0667px ; background-color: rgb(255 , 255 , 255)&quot;&gt;3.manualUpdateNotificationInterval：手动更新通知间隔时间 6小时&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1000" y="1049" width="510" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
